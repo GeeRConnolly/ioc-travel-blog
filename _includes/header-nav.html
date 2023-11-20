@@ -1,11 +1,11 @@
 <header> 
-    <div class="flex justify-between items-center uppercase m-3 p-3">
-        <a class="text-2xl"> Logo </a>
+    <div class="flex justify-between items-center uppercase m-3 py-3 px-8">
+        <a class="text-2xl font-display tracking-widest"> Logo </a>
 
         <nav> 
             {% for nav-item in site.data.site-setting.nav-items %}
 
-            <a href="#" class="m-3 p-3"> {{nav-item.page}} </a>
+            <a href="#" class="tracking-widest m-3 p-3"> {{nav-item.page}} </a>
 
             {% endfor %}
         </nav>
