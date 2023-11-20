@@ -1,0 +1,14 @@
+<header> 
+    <div class="flex justify-between items-center uppercase m-3 p-3">
+        <a class=""> Logo </a>
+
+        <nav> 
+            {% for nav-item in site.data.site-setting.nav-items %}
+
+            <a href="#" class="m-3 p-3"> {{nav-item.page}} </a>
+
+            {% endfor %}
+        </nav>
+
+    </div>
+</header>   

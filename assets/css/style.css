@@ -444,11 +444,32 @@ p {
 .m-4 {
   margin: 1rem;
 }
+.m-3 {
+  margin: 0.75rem;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
 .h-full {
   height: 100%;
+}
+.min-h-100 {
+  min-height: 100vh;
+}
+.min-h-full {
+  min-height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-96 {
   width: 24rem;
@@ -456,8 +477,26 @@ p {
 .w-full {
   width: 100%;
 }
+.max-w-lg {
+  max-width: 32rem;
+}
+.max-w-md {
+  max-width: 28rem;
+}
 .shrink-0 {
   flex-shrink: 0;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
@@ -490,6 +529,49 @@ p {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-5p {
+  padding: 5%;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.leading-10 {
+  line-height: 2.5rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
