@@ -24,7 +24,8 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['proxima-nova', 'ui-sans-serif'],
-      'sans-tight': ['proxima-nova-condensed', 'ui-sans-serif'],
+      'sans-tight': ['proxima-nova-condensed', 
+      'ui-sans-serif'],
       'mono': ['Inconsolata', 'ui-mono', 'monospace'],
       'soft': ['proxima-soft', 'ui-sans-serif'],
       'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
