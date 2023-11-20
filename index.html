@@ -1,11 +1,16 @@
 ---
 layout: default 
 seo: 
-    title: This should appear in the browser tab
+    title: Fancy travel blog website
     description: 
     keywords: 
     social_image: 
     hide-from-google: false
+
+hero-banner:
+    image: /assets/images/blog-bg-12.jpg
+    heading: A whole new world
+    subheading: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
 ---
 
 {% include hero-banner.html %}
@@ -15,12 +20,12 @@ seo:
 <section class="bg-light-grey">
 
     <div class="grid grid-cols-2 gap-10 p-5p">
-        <img src="https://picsum.photos/id/1060/600/400">
+        <img src="/assets/images/blog-bg-13.jpg">
 
         <div class="self-center">
-            <h2 class="text-5xl font-display max-w-xs"> A fascinating heading about the site. </h2>
-            <p class="py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed, necessitatibus excepturi quidem animi, alias perspiciatis est rerum. </p>
-            <a href="#" class="uppercase underline"> Read more </a>
+            <h2 class="text-6xl font-display max-w-sm"> A fascinating heading about the site. </h2>
+            <p class="py-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed, necessitatibus excepturi quidem animi, alias perspiciatis est rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates. </p>
+            <a href="#" class="font-display uppercase underline tracking tracking-widest"> Read more </a>
         </div>
     </div>
 
@@ -28,28 +33,41 @@ seo:
 
 <!-- Section 3 - Upcoming Travel Destinations -->
 
-<section>
-    <div class="p-5p text-center">
+<section class="p-5p">
 
-        <h2 class="font-display text-4xl text-cente uppercase"> Upcoming travel destinations </h2>
+        <h2 class="font-display text-4xl text-center uppercase"> Upcoming travel destinations </h2>
     
-    </div>
-    
-    <div class="grid grid-cols-2 gap-10 border-t-1 border-b-1">
+    <div class="grid grid-cols-2 gap-8 border-t-1 border-b-1 p-6">
 
-        <ul class="grid divide-y divide-black border-y border-black"> 
-            <li class="flex justify-between leading-9"> <span> Europe </span> <span> 00 Month - 00 Month 2023 </span></li>
-            <li class="flex justify-between leading-9"> <span> Australia </span> <span> 00 Month - 00 Month 2023 </span></li>
-            <li class="flex justify-between leading-9"> <span> Asia </span> <span> 00 Month - 00 Month 2023 </span></li>
-            <li class="flex justify-between leading-9"> <span> Europe </span> <span> 00 Month - 00 Month 2023 </span></li>
+        <ul class="grid divide-y divide-black border-y border-black my-6"> 
+
+            {% for destination in site.data.site-setting.destinations %}
+
+            <li class="flex justify-between leading-9 py-4"> <span class="uppercase"> {{destination.location}} </span> <span> {{destination.date}} </span></li>
+
+            {% endfor %}
         </ul>
-    </div>
 
-    <div class="flex pl-5p relative">
-        <img src="https://picsum.photos/id/743/600/400">
+    <div class="relative">
+        <img src="assets/images/blog-bg-14.jpg" class="absolute inset-0 object-cover h-full w-full">
         <h3 class="font-display text-3xl bg-light-grey absolute bottom-3 py-4 px-6"> Currently in Tuscany </h3>
     </div>
 
     </div>
 
 </section>  
+
+<!-- Recently on the blog section -->
+
+<section class="p-8 bg-light-grey">
+
+    <h2 class="uppercase text-4xl font-display text-center py-6 leading-14"> Recently on the blog...</h2>
+
+    <div class="flex overflow-x-scroll gap-4 items-center"> 
+	{% for post in site.posts %}
+	
+        {% include post-loop-item.html %}
+	
+	{% endfor %}
+    </div>
+</section> 

@@ -1,10 +1,15 @@
 <header>
 
-    <div style="background-image: url('https://picsum.photos/id/1025/600/400');" class="flex flex-col bg-cover min-h-screen text-white p-5p justify-center">
+    <div style="background-image: url('{{page.hero-banner.image}}');" class="flex flex-col bg-cover bg-[60%_40%] min-h-screen text-white p-5p justify-center">
 
-        <h1 class="max-w-md text-8xl font-display"> A whole new world </h1>
-        <p class="max-w-md uppercase"> Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. </p>
+        <h1 class="max-w-2xl text-9xl font-display"> {{page.hero-banner.heading}} </h1>
+        <p class="max-w-sm uppercase"> {{page.hero-banner.subheading}} </p>
 
+        {% if page.hero-banner.link %}
+
+        <a href="{{page.hero-banner.link}}" class="uppercase text-2xl font-display underline tracking-widest py-2"> Read more </a>
+
+        {% endif %}
     </div>
 
 </header>

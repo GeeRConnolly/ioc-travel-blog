@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Third Blog Post 
-description: This is a short description of the third blog post
-featured_image: 'https://placekitten.com/900/600'
+title: Palm Tree Bliss
+description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
+featured_image: 'assets/images/blog-bg-16.jpg'
 author:
 seo:
-    title: This should appear in the browser tab
+    title: Blog - Palm Tree Bliss
     description: 
     keywords: 
     social_image: 

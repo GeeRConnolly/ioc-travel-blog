@@ -1,13 +1,31 @@
 ---
 layout: default
+
+hero-banner:
+    image: /assets/images/blog-bg-10.jpg
+    heading: Exploring Sumbawa.
+    subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
+    link: /2023/01/01/first-post
 ---
+
+{% include hero-banner.html %}
 
 <section class="p-8">
 
-	{% for post in site.posts %}
+        <h2 class="text-4xl font-display uppercase text-center py-8"> Recently on the blog. </h2>
+
+    <div class="masonry masonry-cols-3"> 
+	    {% for post in site.posts %}
 	
         {% include post-loop-item.html %}
 	
 	{% endfor %}
 
+    <!-- This can be deleted its just been doubled up for example of multiple blogs -->
+	    {% for post in site.posts %}
+	
+        {% include post-loop-item.html %}
+	
+	{% endfor %}
+    </div>
 </section> 

@@ -1,13 +1,13 @@
-<div>
+<div class="basis-[30%] grow-0 shrink-0">
 	
 	<div class="bg-cover aspect-square relative">
         <img src="{{ post.featured_image }}" alt="{{post.title}}" class="absolute inset-0 w-full h-full object-cover">
     </div>
     
     <div class="p-2">
-    	<h4> {{post.title}} </h4>
+    	<h4 class="uppercase py-4"> {{post.title}} </h4>
     	<p> {{post.description }} </p>
-    	<a href="{{post.url}}">  Read More </a>  
+    	<a href="{{post.url}}" class="font-display uppercase underline tracking tracking-widest py-2">  Read More </a>  
     </div>
     
 </div>

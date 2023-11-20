@@ -3,4 +3,14 @@ nav-items:
   - page: shop
   - page: members
 
+destinations:
+  - location: europe 
+    date: 00 month - 00 month 2023
+  - location: australia
+    date: 00 month - 00 month 2023
+  - location: asia
+    date: 00 month - 00 month 2023
+  - location: europe
+    date: 00 month - 00 month 2023
+  
   
