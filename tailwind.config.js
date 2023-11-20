@@ -23,12 +23,14 @@ module.exports = {
       '9xl': ['8rem', '1'],
     },
     fontFamily: {
-      'sans': ['proxima-nova', 'ui-sans-serif'],
+      
       'sans-tight': ['proxima-nova-condensed', 
       'ui-sans-serif'],
       'mono': ['Inconsolata', 'ui-mono', 'monospace'],
       'soft': ['proxima-soft', 'ui-sans-serif'],
       'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'display' : ['Italiana', 'sans-serif'],
+      'sans' : ['Montserrat', 'sans-serif']
     },
     extend: {
       lineHeight: {
@@ -49,6 +51,13 @@ module.exports = {
         '60': '60vh',
         '50': '50vh',
       },
+
+      colors:{
+        'light-grey': '#F2EFEC',
+        'dark-grey': '#E0DCD9',
+        'black': '#1E1E1E',
+      },
+
       aspectRatio: {
         'landscape': '3 / 2',
         'portrait-tall': '5/8',
@@ -60,3 +69,5 @@ module.exports = {
   plugins: [
   ],
 }
+
+
