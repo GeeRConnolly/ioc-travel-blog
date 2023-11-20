@@ -2,6 +2,12 @@
 
     <div style="background-image: url('{{page.hero-banner.image}}');" class="flex flex-col bg-cover bg-[60%_40%] min-h-screen text-white p-5p justify-center">
 
+        {% if page.hero-banner.subheading1 %}
+
+        <p class="uppercase py-1"> Shop our </p>
+
+        {% endif %}
+
         <h1 class="max-w-2xl text-9xl font-display"> {{page.hero-banner.heading}} </h1>
         <p class="max-w-sm uppercase"> {{page.hero-banner.subheading}} </p>
 

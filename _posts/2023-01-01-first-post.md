@@ -21,4 +21,13 @@ hero-banner:
 
 <section>
 
+    <div>
+        <p> By Tina May
+        <h2> This is a heading </h2>
+        </p>
+    </div>
+
 </section>
+
+
+

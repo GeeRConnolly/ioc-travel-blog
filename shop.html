@@ -1,4 +1,26 @@
 ---
 layout: default
+
+hero-banner:
+    image: /assets/images/blog-bg-17.jpg
+    subheading1: Shop our
+    heading: Curated Collection.
+    subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
+    link: 
 ---
-<h1> This is the shop page </h1>
+
+{% include hero-banner.html %}
+
+<section class="p-8">
+
+    <h2 class="text-4xl font-display text-center py-8"> Travel Guides </h2>
+
+
+<div class="grid grid-cols-3 gap-6"> 
+    {% for post in site.posts %}
+
+    {% include post-loop-item.html %}
+
+{% endfor %}
+
+</section>
