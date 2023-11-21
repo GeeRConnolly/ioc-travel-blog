@@ -2,17 +2,33 @@
 layout: post
 title: Exploring Ocean
 description: Surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
-featured_image: 'assets/images/blog-bg-18.jpg'
+featured_image: /assets/images/blog-bg-18.jpg
 author: Mr Author
+hero-banner:
+    image: /assets/images/blog-bg-10.jpg
+    subheading1: 
+    heading: Curated Collection.
+    subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
+    link:
 seo:
-    title: Blog - Exploring Ocean
+    title: Blog | Exploring Ocean
     description: 
-    keywords: 
+    keywords: exploring the ocean adventure ocean living
     social_image: 
     hide-from-google: false
 ---
 
 ## This is a heading in our blog post 
 
-This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed, necessitatibus excepturi quidem animi, alias perspiciatis est rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed. 
+
+<img src="/assets/images/blog-bg-7.jpg">
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed, necessitatibus excepturi quidem animi, alias perspiciatis est rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed, necessitatibus excepturi quidem animi, alias perspiciatis est rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit optio obcaecati impedit quas eaque vero nihil laborum culpa voluptates facilis aliquid sed.
+
+> "Sometimes you just have to break a board and see what it's capable of"
+
+<img src="/assets/images/blog-bg-11.jpg">
