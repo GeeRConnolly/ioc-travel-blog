@@ -5,22 +5,38 @@ layout: default
 <!-- This is for set up of the single product page -->
 
 <section class="bg-light-grey">
-    <div class="grid grid-cols-2"> 
-        <div>
-            <h2>{{page.title}} </h2>
-            <h3> {{page.subheading}}</h3>
-            <p>{{page.description}}</p>
-            <a href=""> </a>
 
-            <img src="/assets/images/blog-bg-2.jpg"> 
-
+    <div class="grid grid-cols-2 gap-6"> 
+        <div class="p-5p bottom-10 flex items-end">
+            <div>
+                <h2 class="font-display text-3xl">{{page.title}} </h2>
+                <h3 class="uppercase"> {{page.subheading}}</h3>
+                <p>{{page.description}}</p>
+                <a href="" class="bg-black text-white  uppercase text-center p-2"> Buy now </a>
+            </div>
         </div>
+
+        <div>
+            <img src="/assets/images/blog-bg-2.jpg" class=""> 
+        </div>
+
     </div>
 
-        <div> 
-            <h2 class="font-display text-4xl uppercase p-5 text-center"> What's inside </h2>
+    <!-- Whats inside section -->
 
-            <img src="/assets/images/blog-bg-1.jpg">
+        <div class="p-5p"> 
+            <h2 class="font-display text-4xl uppercase p-6 mt-4 text-center"> What's inside </h2>
+
+            <img src="{{page.gallery[0].image-path}}">
+            <div class="grid grid-cols-6 gap-2 pt-2">
+                
+                {% for image in page.gallery %}
+                
+                <img src="{{image.image-path}}" alt="{{image.alt}}">
+
+                {% endfor %}
+
+            </div>
         </div>
 
 </section>
