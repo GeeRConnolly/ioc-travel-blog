@@ -1,0 +1,35 @@
+<div class="basis-[30%] grow-0 shrink-0 bg-white">
+	
+	<div class="bg-cover relative pb-[50vh]">
+        <img src="{{product.featured_image}}" alt="{{product.title}}" class="absolute inset-0 w-full h-full object-cover">
+
+    {% if product.tag %}
+
+        <p class="absolute top-2 -right-2 bg-black text-white uppercase tracking-widest py-2 px-6"> {{product.tag}}</p>
+
+    {% endif %}
+
+    </div>
+    
+    <div class="p-4">
+
+     {% if include.type %}   
+        <p class="uppercase bg-light-grey p-2 inline-block"> {{include.type}} </p>
+    {% endif %}
+
+    	<h4 class="uppercase py-4 tracking-wider"> {{product.title}} </h4>
+    	<p class="tracking-wide"> {{product.description}} </p>
+
+        {% assign cent-check = product.price | modulo: 100 %}
+        
+        <p>
+            {% if cent-check > 1 %}
+             ${{product.price | divided_by: 100.00 }}
+            {% else %}
+            ${{product.price | divided_by: 100 }}
+
+            {% endif %}
+            </p>
+    </div>
+    
+</div>

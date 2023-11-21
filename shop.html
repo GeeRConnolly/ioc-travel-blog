@@ -7,19 +7,52 @@ hero-banner:
     heading: Curated Collection.
     subheading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath. 
     link: 
+
+product:
+    tag: New
+
+quote-banner:
+    image: 
+    subheading:
 ---
 
 {% include hero-banner.html %}
 
-<section class="p-8">
+<!-- Top section for travel guides -->
+
+<section class="bg-light-grey p-8">
 
     <h2 class="text-4xl font-display text-center py-8"> Travel Guides </h2>
 
 
 <div class="grid grid-cols-3 gap-6"> 
-    {% for post in site.posts %}
+    {% for product in site.product-guides %}
 
-    {% include post-loop-item.html %}
+    {% include product-loop-item.html type='travel guide' %}
+
+{% endfor %}
+
+</section>
+
+<!-- Quote banner section -->
+
+<section style="background-image: url(/assets/images/blog-bg-10.jpg);" class="flex flex-col bg-cover min-h-screen p-5p relative">
+    
+    <h2 class="font-display text-6xl text-white max-w-xl absolute bottom-10 pb-10"> "Once you get a taste for travel, you'll never be the same." </h2>
+
+</section>
+
+<!-- Lightroom presets section -->
+
+<section class="bg-light-grey p-8">
+
+    <h2 class="text-4xl font-display text-center py-8">     Presets </h2>
+
+
+<div class="grid grid-cols-3 gap-6"> 
+    {% for product in site.product-presets %}
+
+    {% include product-loop-item.html type='lightroom presets' %}
 
 {% endfor %}
 
