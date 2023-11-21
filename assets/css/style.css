@@ -509,6 +509,9 @@ p {
 .mb-0 {
   margin-bottom: 0px;
 }
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -673,6 +676,9 @@ p {
 }
 .p-6 {
   padding: 1.5rem;
+}
+.p-5 {
+  padding: 1.25rem;
 }
 .py-3 {
   padding-top: 0.75rem;

@@ -1,6 +1,8 @@
+<!-- This is the product loop for the product images -->
+
 <div class="basis-[30%] grow-0 shrink-0 bg-white">
 	
-	<div class="bg-cover relative pb-[50vh]">
+	<a href="{{product.url}}" class="block bg-cover relative pb-[50vh]">
         <img src="{{product.featured_image}}" alt="{{product.title}}" class="absolute inset-0 w-full h-full object-cover">
 
     {% if product.tag %}
@@ -9,7 +11,9 @@
 
     {% endif %}
 
-    </div>
+    </a>
+
+<!-- This is the information for the product information - product loop -->
     
     <div class="p-4">
 
@@ -17,7 +21,7 @@
         <p class="uppercase bg-light-grey p-2 inline-block"> {{include.type}} </p>
     {% endif %}
 
-    	<h4 class="uppercase py-4 tracking-wider"> {{product.title}} </h4>
+        <a href="{{product.url}}" class="block uppercase py-4 tracking-wider"> {{product.title}} </a>
     	<p class="tracking-wide"> {{product.description}} </p>
 
         <!-- The below asign has been done so the decimal points are taken into account for any $$ which is 00.00, anything like 0.8 will be picked up and anything 0.0 will be dismissed -->
@@ -34,11 +38,4 @@
             </p>
     </div>
     
-</div>
-
-<!-- This is for set up of the single product page -->
-
-<div class="grid grid-cols-2"> 
-
-
 </div>
