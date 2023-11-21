@@ -43,6 +43,27 @@ html {
       @apply mb-[0.5em] leading-normal;
   }
 
+.blog-content h2,
+.blog-content h3 {
+  @apply uppercase tracking-wide pt-6 pb-4 text-center;
+  
+}
+
+.blog-content p {
+  @apply text-center leading-7 pb-4
+
+}
+
+.blog-content blockquote {
+  @apply text-2xl font-display mx-auto max-w-xl
+}
+
+.blog-content img {
+  
+
+}
+
+
 }
 
 

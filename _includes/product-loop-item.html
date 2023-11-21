@@ -20,6 +20,8 @@
     	<h4 class="uppercase py-4 tracking-wider"> {{product.title}} </h4>
     	<p class="tracking-wide"> {{product.description}} </p>
 
+        <!-- The below asign has been done so the decimal points are taken into account for any $$ which is 00.00, anything like 0.8 will be picked up and anything 0.0 will be dismissed -->
+
         {% assign cent-check = product.price | modulo: 100 %}
         
         <p>

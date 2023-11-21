@@ -1,7 +1,10 @@
 nav-items:
   - page: blog
+    url: /blog
   - page: shop
+    url: /shop
   - page: members
+    url: /members
 
 destinations:
   - location: europe 

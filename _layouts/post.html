@@ -5,6 +5,24 @@ layout: default
 {% include hero-banner.html %}
 
 
+<section class="bg-light-grey border-b border-black p-10">
+
+    <div class="flex justify-between items-center mb-0">
+        <p> by {{page.author}} </p>
+        <h2 class="uppercase font-display text-4xl tracking-wider mb-0"> {{page.title}} </h2>
+        <p> {{page.date | date_to_long_string}} </p>
+        
+    </div>
+
+</section>
 
 
-{{content}}
+<section class="bg-light-grey p-5p blog-content">
+
+    <div class="max-w-3xl mx-auto">
+
+        {{content}}
+
+    </div>
+
+</section>
