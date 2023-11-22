@@ -694,6 +694,12 @@ p {
 .bg-\[60\%_40\%\] {
   background-position: 60% 40%;
 }
+.bg-bottom {
+  background-position: bottom;
+}
+.bg-center {
+  background-position: center;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -885,6 +891,10 @@ html {
  }
  
  .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+ 
+ .first-letter\:min-h-\[70\%\]::first-letter {
+  min-height: 70%;
+}
  
  @media (min-width: 768px) {
   .md\:flex {
