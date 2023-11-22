@@ -486,14 +486,14 @@ p {
 .-right-2 {
   right: -0.5rem;
 }
-.bottom-10 {
-  bottom: 2.5rem;
+.bottom-2 {
+  bottom: 0.5rem;
 }
 .bottom-3 {
   bottom: 0.75rem;
 }
-.bottom-2 {
-  bottom: 0.5rem;
+.bottom-10 {
+  bottom: 2.5rem;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -533,20 +533,8 @@ p {
 .contents {
   display: contents;
 }
-.list-item {
-  display: list-item;
-}
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-5\/3 {
-  aspect-ratio: 5 / 3;
-}
-.aspect-\[\] {
-  aspect-ratio: ;
-}
-.aspect-\[40\%\] {
-  aspect-ratio: 40%;
 }
 .h-full {
   height: 100%;
@@ -556,6 +544,18 @@ p {
 }
 .min-h-80 {
   min-height: 80vh;
+}
+.min-h-\[screen\] {
+  min-height: screen;
+}
+.min-h-\[\] {
+  min-height: ;
+}
+.min-h-\[50\%\] {
+  min-height: 50%;
+}
+.min-h-\[70\%\] {
+  min-height: 70%;
 }
 .w-full {
   width: 100%;
@@ -593,6 +593,9 @@ p {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-col {
   flex-direction: column;
 }
@@ -622,9 +625,6 @@ p {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-12 {
-  gap: 3rem;
 }
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -685,6 +685,9 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(224 220 217 / var(--tw-bg-opacity));
 }
+.bg-\[\] {
+  background-color: ;
+}
 .bg-cover {
   background-size: cover;
 }
@@ -713,11 +716,11 @@ p {
 .p-10 {
   padding: 2.5rem;
 }
-.p-6 {
-  padding: 1.5rem;
-}
 .p-10p {
   padding: 10%;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -743,6 +746,10 @@ p {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -751,35 +758,20 @@ p {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
 .pb-\[50vh\] {
   padding-bottom: 50vh;
-}
-.pt-2 {
-  padding-top: 0.5rem;
-}
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
 }
-.pt-4 {
-  padding-top: 1rem;
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -810,17 +802,11 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
-.leading-9 {
-  line-height: 2.25rem;
-}
-.leading-4 {
-  line-height: 1rem;
-}
-.leading-10 {
-  line-height: 2.5rem;
-}
 .leading-6 {
   line-height: 1.5rem;
+}
+.leading-9 {
+  line-height: 2.25rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -830,6 +816,15 @@ p {
 }
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+.-tracking-wide {
+  letter-spacing: -0.025em;
+}
+.-tracking-widest {
+  letter-spacing: -0.1em;
+}
+.-tracking-wider {
+  letter-spacing: -0.05em;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -865,7 +860,33 @@ html {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-@media (min-width: 768px) {
+ /* Membership styles for form  */
+
+#memberspace-login-form input {
+  border: 2px solid blue;
+ }
+ 
+ #memberspace-login-form label {
+     border: 2px solid yellow;
+ }
+ 
+ /* Forgot Email / forgot password text */
+ #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+     color: green;
+ }
+ 
+ 
+ #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+     color: red;
+ }
+ 
+ #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+     color: blue;
+ }
+ 
+ .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+ 
+ @media (min-width: 768px) {
   .md\:flex {
     display: flex;
   }
