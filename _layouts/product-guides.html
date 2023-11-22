@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<!-- This is for set up of the single product page -->
+<!-- This is for set up of the single product page (travel guides) -->
 
 <section class="bg-light-grey">
 
     <div class="grid grid-cols-2 gap-6"> 
-        <div class="p-5p bottom-10 flex items-end">
+        <div class="p-10p flex items-end bottom-2">
             <div>
-                <h2 class="font-display text-3xl">{{page.title}} </h2>
-                <h3 class="uppercase"> {{page.subheading}}</h3>
-                <p>{{page.description}}</p>
-                <a href="" class="bg-black text-white  uppercase text-center p-2"> Buy now </a>
+                <h2 class="font-display text-3xl pb-2">{{page.title}} </h2>
+                <h3 class="uppercase pb-2"> {{page.subheading}}</h3>
+                <p class="pb-2">{{page.description}}</p>
+                <a href="" class="bg-black text-white  uppercase text-center px-2 py-2"> Buy now </a>
             </div>
         </div>
 
@@ -37,6 +37,37 @@ layout: default
                 {% endfor %}
 
             </div>
+        </div>
+
+        <!-- Table of content/what's included section -->
+
+        <div>
+            <div class="grid grid-cols-2 gap-10 border-t-1 border-b-1 p-6">
+            <div>
+
+                <h3 class="font-display text-3xl"> Table of contents </h3>
+
+                <ul class="grid divide-y divide-black border-y border-black my-6"> 
+        
+                    {% for chapter in page.chapters %}
+        
+                    <li class="flex justify-between py-4"> <span class="uppercase"> {{chapter.chapter-title}} </span> <span> {{chapter.page-numbers}} </span></li>
+        
+                    {% endfor %}
+                </ul>
+            </div>
+        
+            <div>
+            
+                <h3 class="font-display text-3xl"> What's included </h3>
+
+                    <p class="editable"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem commodi iusto officiis, rem, rerum accusamus maxime sapiente qui incidunt quod eum ipsam? Nesciunt exercitationem enim ratione saepe vero corrupti accusamus. </p>
+
+            </div>
+        
+            </div>
+
+
         </div>
 
 </section>

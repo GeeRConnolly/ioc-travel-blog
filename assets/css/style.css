@@ -486,20 +486,20 @@ p {
 .-right-2 {
   right: -0.5rem;
 }
+.bottom-10 {
+  bottom: 2.5rem;
+}
 .bottom-3 {
   bottom: 0.75rem;
 }
-.bottom-10 {
-  bottom: 2.5rem;
+.bottom-2 {
+  bottom: 0.5rem;
 }
 .m-3 {
   margin: 0.75rem;
 }
 .m-4 {
   margin: 1rem;
-}
-.m-2 {
-  margin: 0.5rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -511,12 +511,6 @@ p {
 }
 .mb-0 {
   margin-bottom: 0px;
-}
-.mt-1 {
-  margin-top: 0.25rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -533,8 +527,23 @@ p {
 .grid {
   display: grid;
 }
+.contents {
+  display: contents;
+}
+.list-item {
+  display: list-item;
+}
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.aspect-5\/3 {
+  aspect-ratio: 5 / 3;
+}
+.aspect-\[\] {
+  aspect-ratio: ;
+}
+.aspect-\[40\%\] {
+  aspect-ratio: 40%;
 }
 .h-full {
   height: 100%;
@@ -560,9 +569,6 @@ p {
 .max-w-xl {
   max-width: 36rem;
 }
-.max-w-md {
-  max-width: 28rem;
-}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -575,11 +581,11 @@ p {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -596,6 +602,12 @@ p {
 .justify-between {
   justify-content: space-between;
 }
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -605,11 +617,8 @@ p {
 .gap-4 {
   gap: 1rem;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-2 {
-  gap: 0.5rem;
+.gap-12 {
+  gap: 3rem;
 }
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -701,11 +710,8 @@ p {
 .p-6 {
   padding: 1.5rem;
 }
-.p-5 {
-  padding: 1.25rem;
-}
-.p-44 {
-  padding: 11rem;
+.p-10p {
+  padding: 10%;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -739,27 +745,41 @@ p {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pb-\[50vh\] {
   padding-bottom: 50vh;
+}
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
 }
-.pt-2 {
-  padding-top: 0.5rem;
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;
 }
 .font-display {
   font-family: Italiana, sans-serif;
-}
-.font-soft-tight {
-  font-family: proxima-soft-condensed, ui-sans-serif;
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -773,12 +793,12 @@ p {
   font-size: 2.25rem;
   line-height: 1;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
 .text-3xl {
   font-size: 1.875rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 .uppercase {
@@ -786,6 +806,15 @@ p {
 }
 .leading-9 {
   line-height: 2.25rem;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.leading-10 {
+  line-height: 2.5rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
