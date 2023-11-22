@@ -495,6 +495,9 @@ p {
 .bottom-2 {
   bottom: 0.5rem;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-3 {
   margin: 0.75rem;
 }
@@ -550,6 +553,9 @@ p {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.min-h-80 {
+  min-height: 80vh;
 }
 .w-full {
   width: 100%;
