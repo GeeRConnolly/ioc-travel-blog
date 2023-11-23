@@ -104,26 +104,40 @@ html {
 
  /* Membership styles for form  */
 
-#memberspace-login-form input {
-  border: 2px solid blue;
+ /* Styl */
+
+#memberspace-section #memberspace-login-form input {
+  @apply border-0 border-b border-black rounded-none bg-light-grey
  }
  
  #memberspace-login-form label {
-     border: 2px solid yellow;
+     border: 0;
  }
- 
+
+ #memberspace-login-form
+ .MemberSpaceWidgetInternal__Typography_variant-input-label, #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label2 {
+@apply font-light uppercase font-sans text-sm
+ }
+
+
+
+
  /* Forgot Email / forgot password text */
  #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-     color: green;
+     @apply text-black
  }
  
  
  #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-     color: red;
+  @apply text-black bg-dark-grey uppercase text-xs rounded-none
+  
  }
  
  #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
-     color: blue;
+  @apply text-black text-xs uppercase rounded-none
+
  }
- 
- .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+
+ #memberspace-login-form .MemberSpaceWidgetInternal__BrandedInterface_footer {
+  
+  display: none; }

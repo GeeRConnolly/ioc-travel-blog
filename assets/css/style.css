@@ -457,6 +457,34 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .tag {
   display: inline-block;
   padding: 0.25rem;
@@ -466,6 +494,19 @@ p {
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(87 83 78 / var(--tw-text-opacity));
+}
+.button {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 /* This is the grid style/gallery going up and down the page - all over the shop */
 .absolute {
@@ -542,20 +583,11 @@ p {
 .min-h-screen {
   min-height: 100vh;
 }
-.min-h-80 {
-  min-height: 80vh;
-}
-.min-h-\[screen\] {
-  min-height: screen;
-}
-.min-h-\[\] {
-  min-height: ;
-}
-.min-h-\[50\%\] {
-  min-height: 50%;
-}
 .min-h-\[70\%\] {
   min-height: 70%;
+}
+.min-h-80 {
+  min-height: 80vh;
 }
 .w-full {
   width: 100%;
@@ -578,11 +610,23 @@ p {
 .shrink-0 {
   flex-shrink: 0;
 }
+.shrink {
+  flex-shrink: 1;
+}
 .grow-0 {
   flex-grow: 0;
 }
 .basis-\[30\%\] {
   flex-basis: 30%;
+}
+.border-collapse {
+  border-collapse: collapse;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.resize {
+  resize: both;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -590,11 +634,11 @@ p {
 .grid-cols-6 {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -646,6 +690,9 @@ p {
 .overflow-x-scroll {
   overflow-x: scroll;
 }
+.border {
+  border-width: 1px;
+}
 .border-y {
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -685,17 +732,11 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(224 220 217 / var(--tw-bg-opacity));
 }
-.bg-\[\] {
-  background-color: ;
-}
 .bg-cover {
   background-size: cover;
 }
 .bg-\[60\%_40\%\] {
   background-position: 60% 40%;
-}
-.bg-bottom {
-  background-position: bottom;
 }
 .bg-center {
   background-position: center;
@@ -823,12 +864,6 @@ p {
 .tracking-wide {
   letter-spacing: 0.025em;
 }
-.-tracking-wide {
-  letter-spacing: -0.025em;
-}
-.-tracking-widest {
-  letter-spacing: -0.1em;
-}
 .-tracking-wider {
   letter-spacing: -0.05em;
 }
@@ -838,6 +873,23 @@ p {
 }
 .underline {
   text-decoration-line: underline;
+}
+.outline {
+  outline-style: solid;
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 .masonry {
       -moz-column-gap: 1.5em;
@@ -868,34 +920,65 @@ html {
 
  /* Membership styles for form  */
 
-#memberspace-login-form input {
-  border: 2px solid blue;
- }
+ /* Styl */
+
+#memberspace-section #memberspace-login-form input {
+  border-radius: 0px;
+  border-width: 0px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 239 236 / var(--tw-bg-opacity));
+}
  
  #memberspace-login-form label {
-     border: 2px solid yellow;
+     border: 0;
  }
- 
+
+ #memberspace-login-form
+ .MemberSpaceWidgetInternal__Typography_variant-input-label, #memberspace-login-form .MemberSpaceWidgetInternal__Typography_variant-input-label2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+
+
  /* Forgot Email / forgot password text */
  #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-     color: green;
- }
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
+}
  
  
  #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-     color: red;
- }
- 
- #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
-     color: blue;
- }
- 
- .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
- 
- .first-letter\:min-h-\[70\%\]::first-letter {
-  min-height: 70%;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 220 217 / var(--tw-bg-opacity));
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
  
+ #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+  border-radius: 0px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
+}
+
+ #memberspace-login-form .MemberSpaceWidgetInternal__BrandedInterface_footer {
+  
+  display: none; }
+
  @media (min-width: 768px) {
   .md\:flex {
     display: flex;
